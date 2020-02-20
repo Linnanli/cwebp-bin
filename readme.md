@@ -4,6 +4,14 @@
 
 You probably want [`imagemin-webp`](https://github.com/imagemin/imagemin-webp) instead.
 
+#### Specify binary base url
+
+Provide ability to locally mirror cwebp-bin binaries for various versions and platforms.
+- Environment Variable
+	`$ CWEBP_BINARY_SITE=https://npm.taobao.org/mirrors/cwebp-bin yarn install`
+- npm config variable
+  `$ echo "cwebp_binary_site=https://npm.taobao.org/mirrors/cwebp-bin" >> .npmrc`
+
 
 ## Install
 
