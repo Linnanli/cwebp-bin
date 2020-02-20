@@ -1,11 +1,11 @@
 {
-	"name": "cwebp-bin-mirror",
+	"name": "cwebp-bin-copy",
 	"version": "5.1.0",
 	"description": "cwebp wrapper that makes it seamlessly available as a local dependency",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/Linnanli/cwebp-bin-mirror.git"
+		"url": "git+https://github.com/Linnanli/cwebp-bin-copy.git"
 	},
 	"funding": "https://github.com/imagemin/cwebp-bin?sponsor=1",
 	"bin": {
