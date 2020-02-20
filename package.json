@@ -1,5 +1,5 @@
 {
-	"name": "cwebp-bin",
+	"name": "cwebp-bin-mirror",
 	"version": "5.1.0",
 	"description": "cwebp wrapper that makes it seamlessly available as a local dependency",
 	"license": "MIT",
