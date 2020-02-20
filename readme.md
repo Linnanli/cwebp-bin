@@ -4,7 +4,7 @@
 
 You probably want [`imagemin-webp`](https://github.com/imagemin/imagemin-webp) instead.
 
-#### Specify binary base url
+## Specify binary base url
 
 Provide ability to locally mirror cwebp-bin binaries for various versions and platforms.
 - Environment Variable
