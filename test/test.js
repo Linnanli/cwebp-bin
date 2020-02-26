@@ -1,25 +1,11 @@
 'use strict';
-const fs = require('fs');
 const path = require('path');
 const test = require('ava');
 const execa = require('execa');
 const tempy = require('tempy');
 const binCheck = require('bin-check');
-const binBuild = require('bin-build');
 const compareSize = require('compare-size');
 const cwebp = require('..');
-
-test('rebuild the cwebp binaries', async t => {
-	const tmp = tempy.directory();
-
-	await binBuild
-		.url('http://downloads.webmproject.org/releases/webp/libwebp-1.0.2.tar.gz', [
-			`./configure --disable-shared --prefix="${tmp}" --bindir="${tmp}"`,
-			'make && make install'
-		]);
-
-	t.true(fs.existsSync(path.join(tmp, 'cwebp')));
-});
 
 test('return path to binary and verify that it is working', async t => {
 	t.true(await binCheck(cwebp, ['-version']));
